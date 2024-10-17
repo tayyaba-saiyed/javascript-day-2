@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="checkage()">check age</button>
+    <script>
+        var cust = {
+            name: 'tay',
+            age: 77,
+        };
+
+        function checkage() {
+            if (cust.age < 50 && cust.age > 40) {
+                console.log("Discount 40%");
+            }
+
+            else if (cust.age < 40 && cust.age > 30) {
+                console.log("Discount 30%");
+            }
+
+            else if (cust.age < 30 && cust.age > 20) {
+                console.log("Discount 20%");
+            }
+            
+            else if (cust.age < 20 && cust.age > 0) {
+                console.log("Discount 10%")
+            }
+
+            else if (cust.age >= 50) {
+                console.log("No Discount")
+            }
+        }
+    </script>
+</body>
+
+</html>
